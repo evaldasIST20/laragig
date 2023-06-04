@@ -29,7 +29,7 @@
 </head>
 <body class="mb-48">
     <nav class="flex justify-between items-center mb-4">
-        <a href="/Laravel/laragigNew/laragigs/public/"
+        <a href="/"
             ><img class="w-24" src="{{asset('images/logo.png')}}" alt="" class="logo"
         /></a>
         <ul class="flex space-x-6 mr-6 text-lg">
@@ -40,13 +40,13 @@
                 </span>
             </li>
             <li>
-                <a href="/Laravel/laragigNew/laragigs/public/listings/manage" class="hover:text-laravel"
+                <a href="/listings/manage" class="hover:text-laravel"
                     ><i class="fa-solid fa-gear"></i>
                     Manage Listings</a
                 >
             </li>
             <li>
-                <form class="inline" method="POST" action="/Laravel/laragigNew/laragigs/public/logout">
+                <form class="inline" method="POST" action="/logout">
                     @csrf
                     <button type="submit">
                         <i class="fa-solid fa-door-closed"></i> Logout
@@ -55,12 +55,12 @@
             </li>
             @else
             <li>
-                <a href="/Laravel/laragigNew/laragigs/public/register" class="hover:text-laravel"
+                <a href="/register" class="hover:text-laravel"
                     ><i class="fa-solid fa-user-plus"></i> Register</a
                 >
             </li>
             <li>
-                <a href="/Laravel/laragigNew/laragigs/public/login" class="hover:text-laravel"
+                <a href="/login" class="hover:text-laravel"
                     ><i class="fa-solid fa-arrow-right-to-bracket"></i>
                     Login</a
                 >
@@ -76,7 +76,7 @@
         <p class="ml-2">Copyright &copy; 2022, All Rights reserved</p>
 
         <a
-            href="/Laravel/laragigNew/laragigs/public/listings/create"
+            href="/listings/create"
             class="absolute top-1/3 right-10 bg-black text-white py-2 px-5"
             >Post Job</a
         >

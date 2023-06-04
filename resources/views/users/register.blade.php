@@ -8,7 +8,7 @@
         <p class="mb-4">Create an account to post gigs</p>
     </header>
 
-    <form method="POST" action="/Laravel/laragigNew/laragigs/public/users">
+    <form method="POST" action="/users">
         @csrf
 
         <div class="mb-6">
@@ -91,7 +91,7 @@
         <div class="mt-8">
             <p>
                 Already have an account?
-                <a href="/Laravel/laragigNew/laragigs/public/login" class="text-laravel"
+                <a href="/login" class="text-laravel"
                     >Login</a
                 >
             </p>

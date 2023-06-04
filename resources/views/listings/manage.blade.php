@@ -25,7 +25,7 @@
                     class="px-4 py-8 border-t border-b border-gray-300 text-lg"
                 >
                     <a
-                        href="/Laravel/laragigNew/laragigs/public/listings/{{$listing->id}}/edit"
+                        href="/listings/{{$listing->id}}/edit"
                         class="text-blue-400 px-6 py-2 rounded-xl"
                         ><i
                             class="fa-solid fa-pen-to-square"
@@ -36,7 +36,7 @@
                 <td
                     class="px-4 py-8 border-t border-b border-gray-300 text-lg"
                 >
-                    <form method="POST" action="/Laravel/laragigNew/laragigs/public/listings/{{$listing->id}}">
+                    <form method="POST" action="/listings/{{$listing->id}}">
                         @csrf
                         @method('DELETE')
                         <button class="text-red-500">
